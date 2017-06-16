@@ -127,9 +127,9 @@ It should contain the folders ""game"" and ""boot"".", "Select Game Path", Messa
 
             if (dxresult == System.Windows.Forms.DialogResult.Yes) { Properties.Settings.Default["isdx11"] = true; } else { Properties.Settings.Default["isdx11"] = false; }
 
-            DialogResult hwresult = MessageBox.Show("Do you want to load Heavensward?", " ", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+            DialogResult hwresult = MessageBox.Show("Do you want to load Stormblood?", " ", MessageBoxButtons.YesNo, MessageBoxIcon.None, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
-            if (hwresult == System.Windows.Forms.DialogResult.Yes) { Properties.Settings.Default["expansionlevel"] = 1; } else { Properties.Settings.Default["expansionlevel"] = 0; }
+            if (hwresult == System.Windows.Forms.DialogResult.Yes) { Properties.Settings.Default["expansionlevel"] = 2; } else { Properties.Settings.Default["expansionlevel"] = 0; }
 
             Properties.Settings.Default["setupcomplete"] = true;
             Properties.Settings.Default.Save();

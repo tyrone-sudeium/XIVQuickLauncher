@@ -45,7 +45,7 @@ namespace XIVLauncher
             string hashstr = "";
             try
             {
-                hashstr = "ffxivboot.exe/" + generateHash(Settings.GetGamePath() + "/boot/ffxivboot.exe") + ",ffxivlauncher.exe/" + generateHash(Settings.GetGamePath() + "/boot/ffxivlauncher.exe") + ",ffxivupdater.exe/" + generateHash(Settings.GetGamePath() + "/boot/ffxivupdater.exe"); //make the string of hashed files to prove game version
+                hashstr = "ffxivboot.exe/" + generateHash(Settings.GetGamePath() + "/boot/ffxivboot.exe.old") + ",ffxivlauncher.exe/" + generateHash(Settings.GetGamePath() + "/boot/ffxivlauncher.exe") + ",ffxivupdater.exe/" + generateHash(Settings.GetGamePath() + "/boot/ffxivupdater.exe"); //make the string of hashed files to prove game version
             }
             catch (Exception exc)
             {

@@ -36,7 +36,8 @@
             this.ChangePathButton = new System.Windows.Forms.Button();
             this.GamePathDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.pathLabel = new System.Windows.Forms.Label();
-            this.hwCheckBox = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ExpansionSelector = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // LanguageSelector
@@ -64,7 +65,7 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(35, 167);
+            this.SaveButton.Location = new System.Drawing.Point(35, 220);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(75, 23);
             this.SaveButton.TabIndex = 2;
@@ -75,7 +76,7 @@
             // dxCheckBox
             // 
             this.dxCheckBox.AutoSize = true;
-            this.dxCheckBox.Location = new System.Drawing.Point(15, 55);
+            this.dxCheckBox.Location = new System.Drawing.Point(15, 108);
             this.dxCheckBox.Name = "dxCheckBox";
             this.dxCheckBox.Size = new System.Drawing.Size(95, 17);
             this.dxCheckBox.TabIndex = 3;
@@ -84,7 +85,7 @@
             // 
             // LaunchBackupButton
             // 
-            this.LaunchBackupButton.Location = new System.Drawing.Point(12, 78);
+            this.LaunchBackupButton.Location = new System.Drawing.Point(12, 131);
             this.LaunchBackupButton.Name = "LaunchBackupButton";
             this.LaunchBackupButton.Size = new System.Drawing.Size(121, 23);
             this.LaunchBackupButton.TabIndex = 4;
@@ -94,7 +95,7 @@
             // 
             // ChangePathButton
             // 
-            this.ChangePathButton.Location = new System.Drawing.Point(12, 107);
+            this.ChangePathButton.Location = new System.Drawing.Point(12, 160);
             this.ChangePathButton.Name = "ChangePathButton";
             this.ChangePathButton.Size = new System.Drawing.Size(121, 23);
             this.ChangePathButton.TabIndex = 5;
@@ -110,28 +111,41 @@
             // pathLabel
             // 
             this.pathLabel.AutoSize = true;
-            this.pathLabel.Location = new System.Drawing.Point(12, 133);
+            this.pathLabel.Location = new System.Drawing.Point(12, 186);
             this.pathLabel.Name = "pathLabel";
             this.pathLabel.Size = new System.Drawing.Size(100, 13);
             this.pathLabel.TabIndex = 7;
             this.pathLabel.Text = "Current Game Path:";
             // 
-            // hwCheckBox
+            // label2
             // 
-            this.hwCheckBox.AutoSize = true;
-            this.hwCheckBox.Location = new System.Drawing.Point(116, 55);
-            this.hwCheckBox.Name = "hwCheckBox";
-            this.hwCheckBox.Size = new System.Drawing.Size(142, 17);
-            this.hwCheckBox.TabIndex = 8;
-            this.hwCheckBox.Text = "Load Heavensward(ex1)";
-            this.hwCheckBox.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Expansion";
+            // 
+            // ExpansionSelector
+            // 
+            this.ExpansionSelector.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ExpansionSelector.FormattingEnabled = true;
+            this.ExpansionSelector.Items.AddRange(new object[] {
+            "A Realm Reborn",
+            "Heavensward",
+            "Stormblood"});
+            this.ExpansionSelector.Location = new System.Drawing.Point(12, 71);
+            this.ExpansionSelector.Name = "ExpansionSelector";
+            this.ExpansionSelector.Size = new System.Drawing.Size(121, 21);
+            this.ExpansionSelector.TabIndex = 9;
             // 
             // OptionsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 198);
-            this.Controls.Add(this.hwCheckBox);
+            this.ClientSize = new System.Drawing.Size(371, 255);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ExpansionSelector);
             this.Controls.Add(this.pathLabel);
             this.Controls.Add(this.ChangePathButton);
             this.Controls.Add(this.LaunchBackupButton);
@@ -159,6 +173,7 @@
         private System.Windows.Forms.Button ChangePathButton;
         private System.Windows.Forms.FolderBrowserDialog GamePathDialog;
         private System.Windows.Forms.Label pathLabel;
-        private System.Windows.Forms.CheckBox hwCheckBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox ExpansionSelector;
     }
 }
